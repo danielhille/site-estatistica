@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href='styles.css' rel='stylesheet'>
+</head>
+
+<body>
+    <H1>Estimativa de salário</H1>
+    <div id="scale_main">
+        <div id="scale_display">
+            <h2 id="range" class="neutral">Preencha todos os campos abaixo</h2>
+            <h3 id="bmi">$ --.-- dólares por ano</h3>
+
+
+        </div>
+
+        <div class="measurement" id="height">
+            <h4>Idade</h4>
+
+            <select name="bracket" class="input" id="idade_input">
+                <option value="">---</option>
+                <option value="a">18 a 24</option>
+                <option value="b">25 a 34</option>
+                <option value="c">35 a 44</option>
+                <option value="d">45 a 54</option>
+                <option value="e">55 a 64</option>
+                <option value="f">65+</option>
+            </select>
+
+        </div>
+        <div class="measurement" id="weight">
+            <h4>Anos de Experiência</h4>
+            <input class="input" type="text" id="xp_input" name="weight" required
+                placeholder="Anos de Experiência"></input>
+
+        </div>
+        <div class="measurement" id="height">
+            <h4>Orientação</h4>
+            <select name="orientacao" class="input" id="stack_input">
+                <option value="">---</option>
+                <option value="f">Frontend</option>
+                <option value="b">Backend</option>
+                <option value="fs">Fullstack</option>
+            </select>
+
+        </div>
+        <div class="measurement" id="weight">
+            <h4>Sistema Operacional</h4>
+            <select name="so" class="input" id="so_input">
+                <option value="">---</option>
+                <option value="win">Windows</option>
+                <option value="lnx">Linux</option>
+                <option value="ios">iOS</option>
+                <option value="bsd">BSD</option>
+            </select>
+
+        </div>
+        <div class="measurement" id="height">
+            <h4>Tamanho da empresa</h4>
+
+            <select name="orgsize" class="input" id="org_input">
+                <option value="">---</option>
+                <option value="a">2 a 19</option>
+                <option value="b">20 a 99</option>
+                <option value="c">100 a 499</option>
+                <option value="d">500 a 999</option>
+                <option value="e">1000+</option>
+            </select>
+
+        </div>
+        <div class="measurement" id="weight">
+            <h4>Gênero</h4>
+            <select name="gender" class="input" id="gender_input">
+                <option value="">---</option>
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+            </select>
+
+        </div>
+
+        <div id="buttons">
+            <button id="calculate" onclick="calculate()">CALCULAR</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
